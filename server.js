@@ -29,7 +29,8 @@ app.use('/js',express.static(path.resolve(__dirname, "assets/js")));
 // css/style.css
 
 app.get('/', (req, res) => {
-  res.send("Home page");
+  // res.send("Home page");
+  res.render('index');
 });
 
 app.listen(PORT, () => {
